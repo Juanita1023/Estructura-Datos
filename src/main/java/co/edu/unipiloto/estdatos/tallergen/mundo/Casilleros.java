@@ -3,7 +3,7 @@ package co.edu.unipiloto.estdatos.tallergen.mundo;
 public class Casilleros <T> {
 
 	private Casillero <T> c1;
-	private Casillero c2;
+	private Casillero <T> c2;
 
 	public Casilleros()
 	{
@@ -33,7 +33,7 @@ public class Casilleros <T> {
 		switch(num)
 		{
 		case 1: return c1.despachar();
-		case 2: return (T) c2.despachar();
+		case 2: return c2.despachar();
 		}
 		return null;
 	}
